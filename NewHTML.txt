@@ -1,0 +1,3 @@
+<p><!DOCTYPE html> <html lang=&quot;en&quot;> <head>  <meta charset=&quot;UTF-8&quot;>  <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>  <title>Scarcity Timer</title>  <style>  .counter {  font-size: 2em;  font-weight: bold;  }  </style> </head> <body>  <div class=&quot;counter&quot; id=&quot;counter&quot;>50</div></p>
+
+<p> <script>  document.addEventListener(&quot;DOMContentLoaded&quot;, function() {  const counterElement = document.getElementById('counter');  let count = parseInt(counterElement.innerText, 10);    setInterval(function() {  if (count > 0) {  count--;  counterElement.innerText = count;  }  }, 40000);  });  </script> </body> </html></p>
